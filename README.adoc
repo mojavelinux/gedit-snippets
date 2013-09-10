@@ -1,0 +1,23 @@
+= Gedit Snippets
+Dan Allen
+
+Snippets definitions for Gedit, including a set for AsciiDoc
+
+== Installation
+
+1. Enable the Snippets plugin in the Gedit preferences dialog.
+2. Copy the *.xml files in this repository to $HOME/.config/gedit/snippets/
+3. Restart Gedit
+
+== Usage
+
+To use the snippets, you first have to set the language for the current file (if it's not automatically detected).
+The, type of the tags and press TAB.
+For instance, to insert an quote block in an AsciiDoc file, type:
+
+ q<TAB>
+
+It will expand to a quote block with placeholders.
+The editor will guide you through filling in the "form fields" each time you type tab.
+
+Enjoy!
