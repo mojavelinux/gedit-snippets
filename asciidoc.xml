@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="asciidoc">
+  <snippet>
+    <text><![CDATA[[quote, ${1:by}, ${2:source}]
+____
+${3:text}
+____
+
+$0]]></text>
+    <tag>q</tag>
+    <description>Quote block</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[[NOTE]
+====
+${1:message}
+====
+
+$0]]></text>
+    <tag>N</tag>
+    <description>Note block</description>
+  </snippet>
+  <snippet id="quote-strong-constrained">
+    <text><![CDATA[*${1:text}* $0]]></text>
+    <tag>*</tag>
+    <description>Strong (Constrained)</description>
+  </snippet>
+  <snippet id="quote-strong-unconstrained">
+    <text><![CDATA[**${1:text}** $0]]></text>
+    <tag>s</tag>
+    <description>Strong (Unconstrained)</description>
+  </snippet>
+  <snippet id="wrap-quote-strong-constrained">
+    <text><![CDATA[*${1:$GEDIT_SELECTED_TEXT}*]]></text>
+    <description>Strong (Constrained, Wrap)</description>
+    <accelerator><![CDATA[<Primary>b]]></accelerator>
+  </snippet>
+  <snippet id="wrap-quote-strong-unconstrained">
+    <text><![CDATA[**${1:$GEDIT_SELECTED_TEXT}**]]></text>
+    <description>Strong (Unconstrained, Wrap)</description>
+    <accelerator><![CDATA[<Primary><Alt>b]]></accelerator>
+  </snippet>
+  <snippet id="quote-emphasis-constrained">
+    <text><![CDATA[_${1:text}_ $0]]></text>
+    <tag>_</tag>
+    <description>Emphasis (Constrained)</description>
+  </snippet>
+  <snippet id="quote-emphasis-unconstrained">
+    <text><![CDATA[__${1:text}__ $0]]></text>
+    <tag>e</tag>
+    <description>Emphasis (Unconstrained)</description>
+  </snippet>
+  <snippet id="wrap-quote-emphasis-constrained">
+    <text><![CDATA[_${1:$GEDIT_SELECTED_TEXT}_]]></text>
+    <description>Emphasis (Constrained, Wrap)</description>
+    <accelerator><![CDATA[<Primary>i]]></accelerator>
+  </snippet>
+  <snippet id="wrap-quote-emphasis-unconstrained">
+    <text><![CDATA[__${1:$GEDIT_SELECTED_TEXT}__]]></text>
+    <description>Emphasis (Unconstrained, Wrap)</description>
+    <accelerator><![CDATA[<Primary><Alt>i]]></accelerator>
+  </snippet>
+  <snippet id="quote-monospace-constrained">
+    <text><![CDATA[+${1:text}+ $0]]></text>
+    <tag>+</tag>
+    <description>Monospace (Constrained)</description>
+  </snippet>
+  <snippet id="quote-monospace-unconstrained">
+    <text><![CDATA[++${1:text}++ $0]]></text>
+    <tag>m</tag>
+    <description>Monospace (Unconstrained)</description>
+  </snippet>
+  <snippet id="wrap-quote-monospace-constrained">
+    <text><![CDATA[+${1:$GEDIT_SELECTED_TEXT}+]]></text>
+    <description>Monospace (Constrained, Wrap)</description>
+    <accelerator><![CDATA[<Primary>m]]></accelerator>
+  </snippet>
+  <snippet id="wrap-quote-monospace-unconstrained">
+    <text><![CDATA[++${1:$GEDIT_SELECTED_TEXT}++]]></text>
+    <description>Monospace (Unconstrained, Wrap)</description>
+    <accelerator><![CDATA[<Primary><Alt>m]]></accelerator>
+  </snippet>
+  <snippet>
+    <text><![CDATA[NOTE: $0]]></text>
+    <tag>n</tag>
+    <description>Note</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[[source,${1:lang}]
+----
+${2:source}
+----
+
+$0]]></text>
+    <tag>-</tag>
+    <description>Listing block</description>
+  </snippet>
+  <!--
+  <snippet>
+    <text><![CDATA[image:${1:$GEDIT_DROP_FILENAME}[${2:alt text}] $0]]></text>
+    <tag>img</tag>
+    <description>Image</description>
+    <drop-targets>image/png</drop-targets>
+  </snippet>
+  -->
+</snippets>
