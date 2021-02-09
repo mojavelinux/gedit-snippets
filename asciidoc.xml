@@ -95,12 +95,52 @@ $0]]></text>
     <tag>-</tag>
     <description>Listing block</description>
   </snippet>
-  <!--
   <snippet>
-    <text><![CDATA[image:${1:$GEDIT_DROP_FILENAME}[${2:alt text}] $0]]></text>
-    <tag>img</tag>
-    <description>Image</description>
-    <drop-targets>image/png</drop-targets>
+    <text><![CDATA[:${1:name}: ${2:value}
+$0]]></text>
+    <tag>:</tag>
+    <description>Attribute Entry</description>
   </snippet>
-  -->
+  <snippet>
+    <text><![CDATA[ $ ${1:command}$0]]></text>
+    <tag>$</tag>
+    <description>Command</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[\`${1:text}` $0]]></text>
+    <tag>`</tag>
+    <description>Passthrough Monospace</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[WARNING: $0]]></text>
+    <tag>w</tag>
+    <description>Warning</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[((${1:$GEDIT_SELECTED_TEXT})) $0]]></text>
+    <tag>idx</tag>
+    <description>Index entry</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[``${1:$GEDIT_SELECTED_TEXT}''$0]]></text>
+    <tag>"</tag>
+    <description>Smart quotes (double)</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[<${1:$GEDIT_SELECTED_TEXT}>$0]]></text>
+    <tag>&lt;</tag>
+    <description>Element</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[http://${1:URL}[${2:label}]$0]]></text>
+    <tag>http</tag>
+    <description>URL</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[* $1
+* $2
+* $3]]></text>
+    <tag>ul</tag>
+    <description>Unordered list</description>
+  </snippet>
 </snippets>
